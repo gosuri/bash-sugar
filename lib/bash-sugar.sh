@@ -73,7 +73,7 @@ function echo_info() {
 # Writes the message in yellow to standard out
 #
 function echo_warn() {
-  local red=$(tput setaf 1)
+  local yellow=$(tput setaf 3)
   local reset=$(tput sgr0)
-  echo -e "${red}$@${reset}"
+  echo -e "${yellow}$@${reset}"
 }

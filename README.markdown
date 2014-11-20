@@ -20,7 +20,7 @@ Provides various bash helper functions, ideal for new projects
 
 * `abort_if_var_missing` - Aborts if the environment variable is missing
     
-        $ abort_if_env_missing $BASH_SUBGAR_LIB "is missing"
+        $ abort_if_var_missing $BASH_SUBGAR_LIB "is missing"
 
 * `abort_if_not_root` - Aborts if the current user is not root
     

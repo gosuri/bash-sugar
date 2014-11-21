@@ -1,8 +1,8 @@
-# Bash sugar
+# bash-sugar
 
-Provides various bash helper functions, ideal for new projects
+Shell happens to be my most widely used programing language, this library holds several helper functions that I commonly use
 
-## Provided Functions
+## Included Functions
 
 ### Handling errors
 
@@ -85,6 +85,11 @@ On a slightly related note, by default bash takes the error status of the last i
 
 ### Running tests
 
-Install [bats](https://github.com/sstephenson/bats)
+Install [bats](https://github.com/sstephenson/bats) and the run the below
 
     bats test/bash-sugar.sh
+
+## See
+
+* [POSIX Shell And Utilities](http://shellhaters.herokuapp.com/posix)
+* [Writing Robust Bash Shell Scripts](http://www.davidpashley.com/articles/writing-robust-shell-scripts)

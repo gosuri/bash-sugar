@@ -8,7 +8,7 @@ function bash_sugar_init() {
   set -o errexit
 }
 
-# abort message ...
+# abort ...
 #
 # Abort and writes the message in red to standard error
 #
@@ -32,7 +32,7 @@ function abort_if_missing_command() {
 #
 # Aborts if file is missing 
 #
-function abort_if_file_missing () { 
+function abort_if_file_missing() { 
   local file=${1}
   if [[ ! -f "${file}" ]]; then
     abort "${2}"
@@ -43,7 +43,7 @@ function abort_if_file_missing () {
 #
 # Aborts if the current user is not root
 #
-function abort_if_not_root () {
+function abort_if_not_root() {
   if [[ ${EUID} -ne 0 ]]; then
     abort "${1}"
   fi
